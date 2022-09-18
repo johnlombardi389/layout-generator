@@ -1,0 +1,20 @@
+:root {
+  --bg-colorblue: #00aaff;
+  --bg-colorgreen: #00ff6c;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background: linear-gradient(
+    120deg,
+    var(--bg-colorblue),
+    var(--bg-colorgreen)
+  );
+}
