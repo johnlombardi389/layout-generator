@@ -11,8 +11,20 @@
   </head>
   <body>
     <header class="controls-container">
-      <h1>Hello</h1>
+      <div class="controls">
+        <h1>Layout Generator</h1>
+        <p>Get inspired and generate random layouts for your websites</p>
+
+        <fieldset>
+          <label for="columns">Number of columns (2-12):</label>
+
+          <input type="number" id="columns" name="columns" min="2" max="12" />
+
+          <button type="submit" class="btn">Generate</button>
+        </fieldset>
+      </div>
     </header>
+
     <main class="grid-container">
       <div class="grid"></div>
     </main>

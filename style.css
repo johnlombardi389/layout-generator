@@ -12,11 +12,22 @@
 }
 
 body {
-  background: linear-gradient(
-    120deg,
-    var(--bg-colorblue),
-    var(--bg-colorgreen)
-  );
+  background-color: var(--bg-colorblue);
+}
+
+.btn {
+  border: none;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 1;
 }
 
 .grid {
