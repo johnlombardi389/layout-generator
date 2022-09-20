@@ -17,8 +17,8 @@ for (let i = 0; 1 < cards; i++) {
 
 const grid_div = document.querySelector(".grid");
 
-function makeCards(cards) {
-  const gridItem = cards;
+function makeCards(number) {
+  const cards = number;
 
   for (let i = 0; i < cards; i++) {
     let grid_item = document.createElement("div");
