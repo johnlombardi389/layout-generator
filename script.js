@@ -1,5 +1,5 @@
-let columnSize = 3;
-let cards = 20;
+let columnSize = 4;
+let cards = 30;
 const grid_div = document.querySelector(".grid");
 
 grid_div.setAttribute(
