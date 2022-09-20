@@ -1,9 +1,30 @@
-const DEFAULT_CARDS = 2;
-const DEFAULT_COLUMNS = 3;
+/*
+for (let i = 0; 1 < cards; i++) {
+  const grid_item = document.createElement("div");
+  grid_item.classList.add("card");
 
-let cards = DEFAULT_CARDS;
-let cols = DEFAULT_COLUMNS;
+  grid_item.setAttribute(
+    "style",
+    `
+      grid-column: span ${Math.floor(Math.random() * columnCount) + 1};
+      grid-row: span ${Math.floor(Math.random() * 3) + 1};
+    `
+  );
+
+  grid_div.appendChild(grid_item);
+}
+*/
 
 const grid_div = document.querySelector(".grid");
-grid_div.setAttribute("style", `grid-template-columns: repeat(${cols}, 1fr)`);
-grid_div.innerHTML = "";
+
+function makeCards(cards) {
+  const gridItem = cards;
+
+  for (let i = 0; i < cards; i++) {
+    let grid_item = document.createElement("div");
+    grid_item.classList.add("card");
+    grid_div.appendChild(grid_item);
+  }
+}
+
+makeCards(10);
