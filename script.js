@@ -28,15 +28,3 @@ function makeCards(number) {
 }
 
 makeCards(cards);
-
-/*
-const numberBtn = document.querySelectorAll("[data-number]");
-
-numberBtn.forEach((button) => {
-  button.addEventListener("click", () => {
-    let columnSize = numberBtn.innerHTML;
-    console.log(columnSize);
-    console.log("Hello");
-  });
-});
-*/
