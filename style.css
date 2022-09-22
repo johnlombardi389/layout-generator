@@ -24,6 +24,10 @@ header {
 
 fieldset {
   border: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .input {
@@ -97,8 +101,8 @@ main {
   color: white;
   cursor: pointer;
   padding: 1rem 0;
-  margin: 7px 0;
-  width: 100px;
+  margin: 20px 0;
+  width: 100%;
   opacity: 0.6;
   transition: 0.3s;
 }
