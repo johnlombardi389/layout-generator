@@ -153,7 +153,7 @@ main {
 #sliderValue {
   font-weight: var(--fw-bold);
   font-size: var(--fs-title);
-  color: var(--bg-colorgreen);
+  color: white;
 }
 
 .grid {
@@ -168,11 +168,6 @@ main {
 .card {
   box-sizing: border-box;
   height: 100%;
-  border: 0px solid blue;
   background-color: var(--clr-lightgrey);
   overflow: hidden;
-}
-
-.card:hover {
-  border: 5px solid blue;
 }
