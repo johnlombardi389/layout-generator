@@ -1,16 +1,14 @@
-let columnSize = 4;
-let cards = 30;
+let cards = 50;
+const cols_slider = document.querySelector(".slider").value;
 const grid_div = document.querySelector(".grid");
 
 grid_div.setAttribute(
   "style",
-  `grid-template-columns: repeat(${columnSize}, 1fr)`
+  `grid-template-columns: repeat(${cols_slider.value}, 1fr)`
 );
 grid_div.innerHTML = "";
 
-function makeCards(number) {
-  const cards = number;
-
+function makeCards(cards) {
   for (let i = 0; i < cards; i++) {
     let grid_item = document.createElement("div");
     grid_item.classList.add("card");
@@ -18,7 +16,7 @@ function makeCards(number) {
     grid_item.setAttribute(
       "style",
       `
-        grid-column: span ${Math.floor(Math.random() * columnSize) + 1};
+        grid-column: span ${Math.floor(Math.random() * cards) + 1};
         grid-row: span ${Math.floor(Math.random() * 3) + 1};
       `
     );
@@ -27,4 +25,21 @@ function makeCards(number) {
   }
 }
 
-makeCards(cards);
+const generate_btn = document.querySelector(".btn");
+
+generate_btn.addEventListener("click", (e) => {
+  makeCards(cards);
+  makeCols(cols_slider);
+});
+
+// get slider value
+document.getElementById("slider").oninput = function () {
+  sliderValue();
+};
+
+function sliderValue() {
+  const val = document.getElementById("slider").value;
+  document.getElementById("sliderValue").innerHTML = val;
+  console.log(val);
+}
+sliderValue();
