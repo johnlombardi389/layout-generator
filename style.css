@@ -3,6 +3,11 @@
 :root {
   --ff-main: "Poppins", sans-serif;
 
+  --fw-light: 100;
+  --fw-reg: 400;
+  --fw-bold: 600;
+  --fw-extra: 800;
+
   --bg-colorblue: #00aaff;
   --bg-colorgreen: #00ff6c;
 }
