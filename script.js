@@ -10,7 +10,7 @@ grid_div.innerHTML = "";
 
 function makeCards(cards) {
   for (let i = 0; i < cards; i++) {
-    let grid_item = document.createElement("div");
+    const grid_item = document.createElement("div");
     grid_item.classList.add("card");
 
     grid_item.setAttribute(
@@ -23,6 +23,20 @@ function makeCards(cards) {
 
     grid_div.appendChild(grid_item);
   }
+}
+
+// set amount of cards when loading page
+for (let i = 0; i < 30; i++) {
+  const grid_item = document.createElement("div");
+  grid_item.classList.add("card");
+  grid_div.appendChild(grid_item);
+  grid_item.setAttribute(
+    "style",
+    `
+      grid-column: span ${Math.floor(Math.random() * 3) + 1};
+      grid-row: span ${Math.floor(Math.random() * 3) + 1};
+    `
+  );
 }
 
 const generate_btn = document.querySelector(".btn");
