@@ -8,6 +8,11 @@
   --fw-bold: 600;
   --fw-extra: 800;
 
+  --fs-light: 0.8rem;
+  --fs-reg: 1rem;
+  --fs-btn: 1.2rem;
+  --fs-title: 2rem;
+
   --bg-colorblue: #00aaff;
   --bg-colorgreen: #00ff6c;
 }
