@@ -17,6 +17,7 @@
 
 body {
   background-color: var(--bg-colorblue);
+  font-family: var(--ff-main);
 }
 
 header {
@@ -117,6 +118,7 @@ main {
   width: 100%;
   opacity: 0.6;
   transition: 0.3s;
+  font-family: var(--ff-main);
 }
 
 .btn:hover {
