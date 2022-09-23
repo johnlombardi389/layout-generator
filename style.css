@@ -1,4 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;800&display=swap");
+
 :root {
+  --ff-main: "Poppins", sans-serif;
+
   --bg-colorblue: #00aaff;
   --bg-colorgreen: #00ff6c;
 }
@@ -86,6 +90,14 @@ input[type="range"]::-moz-range-thumb {
   background-color: #5cd5eb;
   height: 2rem;
   width: 1rem;
+}
+
+.input > p.left {
+  margin-right: 20px;
+}
+
+.input > p.right {
+  margin-left: 20px;
 }
 
 main {
