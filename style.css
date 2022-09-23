@@ -113,6 +113,7 @@ input[type="range"]::-moz-range-thumb {
 .input > p {
   font-weight: var(--fw-reg);
   font-size: var(--fs-reg);
+  color: var(--bg-colorgreen);
 }
 
 .input > p.left {
@@ -149,6 +150,12 @@ main {
   opacity: 1;
 }
 
+#sliderValue {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-title);
+  color: var(--bg-colorgreen);
+}
+
 .grid {
   margin: 30px 0;
   display: grid;
@@ -162,7 +169,7 @@ main {
   box-sizing: border-box;
   height: 100%;
   border: 0px solid blue;
-  background-color: green;
+  background-color: var(--clr-lightgrey);
   overflow: hidden;
 }
 
