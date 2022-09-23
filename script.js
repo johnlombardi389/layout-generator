@@ -32,14 +32,13 @@ generate_btn.addEventListener("click", (e) => {
   makeCols(cols_slider);
 });
 
-// get slider value
+// get and display slider value
 document.getElementById("slider").oninput = function () {
   sliderValue();
 };
 
 function sliderValue() {
   const val = document.getElementById("slider").value;
-  document.getElementById("sliderValue").innerHTML = val;
-  console.log(val);
+  document.getElementById("sliderValue").innerHTML = `${val} Columns`;
 }
 sliderValue();
