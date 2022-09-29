@@ -72,15 +72,18 @@ function makeCards(cols) {
 const toggleSun = document.getElementById("toggleDark");
 const toggleMoon = document.getElementById("toggleLight");
 const body = document.querySelector("body");
+const colText = document.getElementById("sliderValue");
 
 toggleSun.addEventListener("click", (e) => {
   toggleSun.classList.toggle("hide");
   toggleMoon.classList.toggle("hide");
   body.style.backgroundColor = "var(--clr-white)";
+  colText.style.color = "var(--clr-darkest)";
 });
 
 toggleMoon.addEventListener("click", (e) => {
   toggleSun.classList.toggle("hide");
   toggleMoon.classList.toggle("hide");
   body.style.backgroundColor = "var(--clr-darkest)";
+  colText.style.color = "var(--clr-white)";
 });
