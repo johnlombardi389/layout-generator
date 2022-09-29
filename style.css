@@ -171,3 +171,20 @@ main {
   background-color: var(--clr-lightgrey);
   overflow: hidden;
 }
+
+.toggle-color {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  left: auto;
+  z-index: 10;
+}
+
+.toggle {
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
+.hide {
+  display: none;
+}
