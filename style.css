@@ -20,8 +20,13 @@
   --clr-dark: #282b30;
   --clr-grey: #36393e;
   --clr-lightgrey: #424549;
+  --clr-white: #ffffff;
   --clr-main: #00aaff;
   --clr-accent: #00ff6c;
+
+  /* Light theme colors */
+  --clr-white: #ffffff;
+  --clr-lighttext: #1e2124;
 }
 
 *,
@@ -181,8 +186,16 @@ main {
 }
 
 .toggle {
+  color: var(--clr-lightgrey);
   cursor: pointer;
-  transform: translate(-50%, -50%);
+}
+
+.sun {
+  color: red;
+}
+
+.moon {
+  color: blue;
 }
 
 .hide {
