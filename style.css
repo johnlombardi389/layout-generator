@@ -50,6 +50,7 @@ header {
 }
 
 fieldset {
+  min-width: 400px;
   border: 0;
   display: flex;
   flex-direction: column;
