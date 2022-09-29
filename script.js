@@ -67,3 +67,20 @@ function makeCards(cols) {
     );
   }
 }
+
+// toggle light and dark theme
+const toggleSun = document.getElementById("toggleDark");
+const toggleMoon = document.getElementById("toggleLight");
+const body = document.querySelector("body");
+
+toggleSun.addEventListener("click", (e) => {
+  toggleSun.classList.toggle("hide");
+  toggleMoon.classList.toggle("hide");
+  body.style.backgroundColor = "white";
+});
+
+toggleMoon.addEventListener("click", (e) => {
+  toggleSun.classList.toggle("hide");
+  toggleMoon.classList.toggle("hide");
+  body.style.backgroundColor = "black";
+});
