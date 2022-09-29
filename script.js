@@ -76,11 +76,11 @@ const body = document.querySelector("body");
 toggleSun.addEventListener("click", (e) => {
   toggleSun.classList.toggle("hide");
   toggleMoon.classList.toggle("hide");
-  body.style.backgroundColor = "white";
+  body.style.backgroundColor = "var(--clr-white)";
 });
 
 toggleMoon.addEventListener("click", (e) => {
   toggleSun.classList.toggle("hide");
   toggleMoon.classList.toggle("hide");
-  body.style.backgroundColor = "black";
+  body.style.backgroundColor = "var(--clr-darkest)";
 });
