@@ -141,7 +141,7 @@ main {
   color: white;
   cursor: pointer;
   padding: 1rem 0;
-  margin: 20px 0;
+  margin: 10px 0;
   width: 200px;
   transition: 0.3s;
   font-family: var(--ff-main);
@@ -158,6 +158,7 @@ main {
   font-weight: var(--fw-bold);
   font-size: var(--fs-title);
   color: var(--clr-light);
+  margin-top: 40px;
 }
 
 .grid {
