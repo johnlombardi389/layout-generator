@@ -18,6 +18,7 @@
   --clr-main: #7d9d9c;
   --clr-dark: #576f72;
   --clr-secondary: #9b639c;
+  --clr-secondarylight: #b992ba;
 }
 
 *,
@@ -136,8 +137,8 @@ main {
 .btn {
   border: none;
   border-radius: 4px;
-  background-color: white;
-  color: var(--clr-dark);
+  background-color: var(--clr-secondary);
+  color: white;
   cursor: pointer;
   padding: 1rem 0;
   margin: 20px 0;
@@ -149,7 +150,7 @@ main {
 }
 
 .btn:hover {
-  background-color: var(--clr-secondary);
+  background-color: var(--clr-secondarylight);
   color: white;
 }
 
